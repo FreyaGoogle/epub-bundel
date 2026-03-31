@@ -1,0 +1,33 @@
+name: Bouw EPUB Bundel
+
+on:
+  push:
+    paths:
+      - 'input/**.txt'
+  workflow_dispatch:  # handmatig starten via GitHub-website
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Zet Python op
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installeer afhankelijkheden
+        run: pip install ebooklib beautifulsoup4
+
+      - name: Bouw EPUB
+        run: python build_epub.py
+
+      - name: Upload EPUB als artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bundel-epub
+          path: output/bundel.epub
+          retention-days: 30

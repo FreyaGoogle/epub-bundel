@@ -23,16 +23,8 @@
       z-index: 10;
     }
 
-    header h1 {
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 0.8rem;
-      color: #8e8e93;
-      margin-top: 0.1rem;
-    }
+    header h1 { font-size: 1.2rem; font-weight: 700; }
+    header p { font-size: 0.8rem; color: #8e8e93; margin-top: 0.1rem; }
 
     .container {
       max-width: 680px;
@@ -40,7 +32,6 @@
       padding: 1.25rem;
     }
 
-    /* Token scherm */
     #token-screen {
       background: #fff;
       border-radius: 14px;
@@ -48,19 +39,9 @@
       margin-top: 1rem;
     }
 
-    #token-screen h2 {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
+    #token-screen h2 { font-size: 1rem; margin-bottom: 0.5rem; }
+    #token-screen p { font-size: 0.85rem; color: #636366; margin-bottom: 1rem; line-height: 1.5; }
 
-    #token-screen p {
-      font-size: 0.85rem;
-      color: #636366;
-      margin-bottom: 1rem;
-      line-height: 1.5;
-    }
-
-    /* Formulier */
     .card {
       background: #fff;
       border-radius: 14px;
@@ -68,12 +49,7 @@
       margin-bottom: 1rem;
     }
 
-    .card h2 {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: #1c1c1e;
-    }
+    .card h2 { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
 
     label {
       display: block;
@@ -88,8 +64,7 @@
     input[type="text"],
     input[type="date"],
     input[type="password"],
-    textarea,
-    select {
+    textarea {
       width: 100%;
       border: 1px solid #e0e0e5;
       border-radius: 10px;
@@ -98,29 +73,17 @@
       font-family: inherit;
       color: #1c1c1e;
       background: #f9f9fb;
-      appearance: none;
       -webkit-appearance: none;
       outline: none;
       transition: border-color 0.15s;
       margin-bottom: 1rem;
     }
 
-    input:focus, textarea:focus, select:focus {
-      border-color: #007aff;
-      background: #fff;
-    }
+    input:focus, textarea:focus { border-color: #007aff; background: #fff; }
 
-    textarea {
-      min-height: 220px;
-      resize: vertical;
-      line-height: 1.6;
-    }
+    textarea { min-height: 220px; resize: vertical; line-height: 1.6; }
 
-    .row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-    }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
 
     .btn {
       display: block;
@@ -135,30 +98,11 @@
     }
 
     .btn:active { opacity: 0.75; transform: scale(0.98); }
+    .btn-primary { background: #007aff; color: #fff; }
+    .btn-secondary { background: #e5e5ea; color: #1c1c1e; margin-top: 0.6rem; }
+    .btn-danger { background: #ff3b30; color: #fff; margin-top: 0.6rem; }
+    .btn:disabled { opacity: 0.45; cursor: default; }
 
-    .btn-primary {
-      background: #007aff;
-      color: #fff;
-    }
-
-    .btn-secondary {
-      background: #e5e5ea;
-      color: #1c1c1e;
-      margin-top: 0.6rem;
-    }
-
-    .btn-danger {
-      background: #ff3b30;
-      color: #fff;
-      margin-top: 0.6rem;
-    }
-
-    .btn:disabled {
-      opacity: 0.45;
-      cursor: default;
-    }
-
-    /* Status melding */
     #status {
       display: none;
       border-radius: 12px;
@@ -168,25 +112,10 @@
       line-height: 1.5;
     }
 
-    #status.success {
-      background: #d1f2e0;
-      color: #1a6636;
-      display: block;
-    }
+    #status.success { background: #d1f2e0; color: #1a6636; display: block; }
+    #status.error   { background: #fde8e8; color: #c0392b; display: block; }
+    #status.loading { background: #e8f0fe; color: #1a56db; display: block; }
 
-    #status.error {
-      background: #fde8e8;
-      color: #c0392b;
-      display: block;
-    }
-
-    #status.loading {
-      background: #e8f0fe;
-      color: #1a56db;
-      display: block;
-    }
-
-    /* Artikellijst */
     .article-list { list-style: none; }
 
     .article-item {
@@ -199,14 +128,8 @@
     }
 
     .article-item:last-child { border-bottom: none; }
-
     .article-item-title { font-weight: 500; }
-
-    .article-item-meta {
-      font-size: 0.75rem;
-      color: #8e8e93;
-      margin-top: 0.1rem;
-    }
+    .article-item-meta { font-size: 0.75rem; color: #8e8e93; margin-top: 0.1rem; }
 
     .badge {
       font-size: 0.72rem;
@@ -217,26 +140,30 @@
       white-space: nowrap;
     }
 
-    .empty-state {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #8e8e93;
-      font-size: 0.9rem;
-    }
+    .empty-state { text-align: center; padding: 2rem 1rem; color: #8e8e93; font-size: 0.9rem; }
 
-    /* Workflow knop sectie */
-    .build-section {
-      background: #fff;
-      border-radius: 14px;
-      padding: 1.25rem;
+    .build-section { background: #fff; border-radius: 14px; padding: 1.25rem; margin-bottom: 1rem; }
+    .build-section p { font-size: 0.85rem; color: #636366; margin-bottom: 0.75rem; line-height: 1.5; }
+
+    /* Shortcut instructie */
+    .shortcut-box {
+      background: #fff3cd;
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
       margin-bottom: 1rem;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #856404;
     }
 
-    .build-section p {
-      font-size: 0.85rem;
-      color: #636366;
-      margin-bottom: 0.75rem;
-      line-height: 1.5;
+    .shortcut-box strong { display: block; margin-bottom: 0.3rem; font-size: 0.9rem; }
+
+    code {
+      background: #f2f2f7;
+      padding: 0.1rem 0.4rem;
+      border-radius: 5px;
+      font-size: 0.82rem;
+      color: #1c1c1e;
     }
   </style>
 </head>
@@ -244,7 +171,7 @@
 
 <header>
   <h1>EPUB Bundel</h1>
-  <p id="header-sub">Artikelen beheren</p>
+  <p>Artikelen beheren</p>
 </header>
 
 <div class="container">
@@ -252,7 +179,7 @@
   <!-- Token invoer -->
   <div id="token-screen" style="display:none">
     <h2>GitHub token instellen</h2>
-    <p>Voer je GitHub Personal Access Token in. Deze wordt alleen lokaal in je browser opgeslagen en nooit verstuurd naar anderen.</p>
+    <p>Voer je GitHub Personal Access Token in. Deze wordt alleen lokaal op je apparaat opgeslagen.</p>
     <label for="token-input">Token</label>
     <input type="password" id="token-input" placeholder="ghp_..."/>
     <button class="btn btn-primary" onclick="saveToken()">Opslaan</button>
@@ -287,9 +214,16 @@
       <button class="btn btn-primary" id="save-btn" onclick="saveArticle()">Opslaan in bundel</button>
     </div>
 
+    <!-- Shortcut instructie (alleen tonen als token beschikbaar) -->
+    <div class="shortcut-box" id="shortcut-hint">
+      <strong>Tip: gebruik de Delen-knop</strong>
+      Selecteer tekst in Safari of een andere app → tik op <strong>Delen</strong> → kies <strong>Opslaan in EPUB</strong>.
+      Heb je de shortcut nog niet? <a href="#shortcut-setup" style="color:#856404">Bekijk de instructies onderaan.</a>
+    </div>
+
     <!-- Bundel bouwen -->
     <div class="build-section">
-      <p>Nadat je artikelen hebt toegevoegd, kun je hier de EPUB bouwen. Download hem daarna via GitHub Actions.</p>
+      <p>Nadat je artikelen hebt toegevoegd kun je hier de EPUB bouwen. Download hem daarna via GitHub Actions.</p>
       <button class="btn btn-primary" onclick="triggerBuild()">EPUB bouwen</button>
       <button class="btn btn-secondary" onclick="openActions()">Naar GitHub Actions →</button>
     </div>
@@ -302,6 +236,59 @@
       </ul>
     </div>
 
+    <!-- Shortcut setup instructies -->
+    <div class="card" id="shortcut-setup">
+      <h2>Shortcut instellen</h2>
+      <p style="font-size:0.85rem;color:#636366;margin-bottom:1rem;line-height:1.6;">
+        Maak eenmalig een shortcut aan in de <strong>Opdrachten</strong>-app zodat je vanuit élke app tekst kunt delen naar je bundel.
+      </p>
+
+      <div id="shortcut-steps" style="font-size:0.85rem;line-height:1.8;color:#1c1c1e;">
+        <p><strong>Stap 1</strong> — Open de <strong>Opdrachten</strong>-app op je iPad</p>
+        <p><strong>Stap 2</strong> — Tik op <strong>+</strong> rechtsboven</p>
+        <p><strong>Stap 3</strong> — Tik op de naam bovenin → typ <strong>Opslaan in EPUB</strong></p>
+        <p><strong>Stap 4</strong> — Tik op het ⚙️-icoon → zet <strong>Gebruik in deelmenu</strong> aan → Invoertypen: alleen <strong>Tekst</strong></p>
+        <p><strong>Stap 5</strong> — Tik op <strong>Voeg actie toe</strong> en voeg de volgende acties toe in volgorde:</p>
+
+        <ol style="padding-left:1.2rem;margin-top:0.5rem;">
+          <li style="margin-bottom:0.75rem">Zoek <strong>Vraag om invoer</strong> → Vraag: <em>"Titel van het artikel?"</em> → Sla op als variabele <strong>Titel</strong></li>
+          <li style="margin-bottom:0.75rem">Zoek <strong>Vraag om invoer</strong> → Vraag: <em>"Categorie?"</em> → Standaard: <em>"Algemeen"</em> → Sla op als variabele <strong>Categorie</strong></li>
+          <li style="margin-bottom:0.75rem">Zoek <strong>Huidige datum</strong> → Voeg toe</li>
+          <li style="margin-bottom:0.75rem">Zoek <strong>Datum opmaken</strong> → Opmaak: Aangepast → <code>yyyy-MM-dd</code> → Sla op als variabele <strong>Datum</strong></li>
+          <li style="margin-bottom:0.75rem">Zoek <strong>Datum opmaken</strong> (tweede keer) → Opmaak: Aangepast → <code>HHmmss</code> → Sla op als variabele <strong>Tijd</strong></li>
+          <li style="margin-bottom:0.75rem">Zoek <strong>Tekst</strong> → Voer in:
+            <pre style="background:#f2f2f7;padding:0.6rem;border-radius:8px;margin-top:0.4rem;font-size:0.8rem;overflow-x:auto;">TITEL: [Titel]
+DATUM: [Datum]
+CATEGORIE: [Categorie]
+---
+[Opdracht-invoer]</pre>
+            Sla op als variabele <strong>Inhoud</strong>
+          </li>
+          <li style="margin-bottom:0.75rem">Zoek <strong>Codeer</strong> → Codeer met <strong>Base64</strong> → invoer: variabele <em>Inhoud</em> → Sla op als variabele <strong>Gecodeerd</strong></li>
+          <li style="margin-bottom:0.75rem">Zoek <strong>Haal inhoud van URL op</strong> → stel in:
+            <ul style="padding-left:1rem;margin-top:0.3rem;">
+              <li>URL: <code id="api-url">https://api.github.com/repos/FreyaGoogle/epub-bundel/contents/input/[Datum]_[Tijd].txt</code></li>
+              <li>Methode: <strong>PUT</strong></li>
+              <li>Kopteksten: voeg toe → Sleutel: <code>Authorization</code> → Waarde: <code>token <span id="token-display">jouw-token</span></code></li>
+              <li>Kopteksten: voeg toe → Sleutel: <code>Accept</code> → Waarde: <code>application/vnd.github+json</code></li>
+              <li>Aanvraaginhoud: <strong>JSON</strong> → voeg velden toe:
+                <ul style="padding-left:1rem;">
+                  <li><code>message</code> → <em>Artikel: [Titel]</em></li>
+                  <li><code>content</code> → variabele <em>Gecodeerd</em></li>
+                  <li><code>branch</code> → <em>main</em></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li style="margin-bottom:0.75rem">Zoek <strong>Toon resultaat</strong> → Tekst: <em>"Opgeslagen in bundel!"</em></li>
+        </ol>
+
+        <p style="margin-top:1rem;"><strong>Stap 6</strong> — Tik op <strong>Gereed</strong> om op te slaan</p>
+
+        <button class="btn btn-secondary" onclick="copyToken()" style="margin-top:1rem;width:auto;padding:0.5rem 1.2rem;font-size:0.85rem;">Token kopiëren voor shortcut</button>
+      </div>
+    </div>
+
     <!-- Token resetten -->
     <div style="text-align:center; padding-bottom: 2rem;">
       <button class="btn btn-danger" style="width:auto; padding: 0.5rem 1.2rem; font-size:0.85rem;" onclick="resetToken()">Token verwijderen</button>
@@ -311,11 +298,10 @@
 </div>
 
 <script>
-  const OWNER = 'FreyaGoogle';
-  const REPO  = 'epub-bundel';
+  const OWNER  = 'FreyaGoogle';
+  const REPO   = 'epub-bundel';
   const BRANCH = 'main';
 
-  // ── Token beheer ──────────────────────────────────────────────
   function getToken() { return localStorage.getItem('gh_token'); }
 
   function saveToken() {
@@ -331,13 +317,19 @@
     init();
   }
 
-  // ── GitHub API ─────────────────────────────────────────────────
+  function copyToken() {
+    const t = getToken();
+    if (!t) { showStatus('Geen token opgeslagen.', 'error'); return; }
+    navigator.clipboard.writeText(t).then(() => {
+      showStatus('Token gekopieerd naar klembord.', 'success');
+    });
+  }
+
   async function ghFetch(path, options = {}) {
-    const token = getToken();
     const res = await fetch(`https://api.github.com${path}`, {
       ...options,
       headers: {
-        'Authorization': `token ${token}`,
+        'Authorization': `token ${getToken()}`,
         'Content-Type': 'application/json',
         'Accept': 'application/vnd.github+json',
         ...(options.headers || {}),
@@ -346,19 +338,12 @@
     return res;
   }
 
-  // ── Bestandsnaam genereren ─────────────────────────────────────
-  function toFilename(titel, datum) {
-    const prefix = datum || new Date().toISOString().slice(0, 10);
-    const slug = titel
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .trim()
-      .replace(/\s+/g, '-')
-      .slice(0, 50);
-    return `${prefix}_${slug || 'artikel'}.txt`;
+  function toFilename(datum) {
+    const d = datum || new Date().toISOString().slice(0, 10);
+    const t = new Date().toTimeString().slice(0, 8).replace(/:/g, '');
+    return `${d}_${t}.txt`;
   }
 
-  // ── Artikel opslaan ───────────────────────────────────────────
   async function saveArticle() {
     const titel     = document.getElementById('titel').value.trim();
     const datum     = document.getElementById('datum').value;
@@ -372,37 +357,25 @@
     btn.disabled = true;
     showStatus('Opslaan...', 'loading');
 
-    const content = `TITEL: ${titel}\nDATUM: ${datum}\nCATEGORIE: ${categorie}\n---\n${tekst}\n`;
-    const filename = toFilename(titel, datum);
-    const path = `input/${filename}`;
-    const encoded = btoa(unescape(encodeURIComponent(content)));
+    const content  = `TITEL: ${titel}\nDATUM: ${datum}\nCATEGORIE: ${categorie}\n---\n${tekst}\n`;
+    const filename = toFilename(datum);
+    const encoded  = btoa(unescape(encodeURIComponent(content)));
 
     try {
-      // Controleer of bestand al bestaat (voor update)
-      let sha;
-      const check = await ghFetch(`/repos/${OWNER}/${REPO}/contents/${path}`);
-      if (check.ok) {
-        const existing = await check.json();
-        sha = existing.sha;
-      }
-
-      const body = {
-        message: `Artikel toegevoegd: ${titel}`,
-        content: encoded,
-        branch: BRANCH,
-      };
-      if (sha) body.sha = sha;
-
-      const res = await ghFetch(`/repos/${OWNER}/${REPO}/contents/${path}`, {
+      const res = await ghFetch(`/repos/${OWNER}/${REPO}/contents/input/${filename}`, {
         method: 'PUT',
-        body: JSON.stringify(body),
+        body: JSON.stringify({
+          message: `Artikel toegevoegd: ${titel}`,
+          content: encoded,
+          branch: BRANCH,
+        }),
       });
 
       if (res.ok) {
         showStatus(`"${titel}" is opgeslagen in de bundel.`, 'success');
         document.getElementById('titel').value = '';
         document.getElementById('tekst').value = '';
-        document.getElementById('datum').value = '';
+        document.getElementById('datum').value = new Date().toISOString().slice(0, 10);
         document.getElementById('categorie').value = '';
         loadArticles();
       } else {
@@ -416,7 +389,6 @@
     btn.disabled = false;
   }
 
-  // ── EPUB bouwen ────────────────────────────────────────────────
   async function triggerBuild() {
     showStatus('Workflow starten...', 'loading');
     try {
@@ -425,7 +397,7 @@
         body: JSON.stringify({ ref: BRANCH }),
       });
       if (res.status === 204) {
-        showStatus('GitHub bouwt nu de EPUB. Ga naar Actions om hem te downloaden (duurt ~1 minuut).', 'success');
+        showStatus('GitHub bouwt nu de EPUB. Ga naar Actions om hem te downloaden (~1 minuut).', 'success');
       } else {
         const err = await res.json();
         showStatus(`Fout: ${err.message}`, 'error');
@@ -439,33 +411,28 @@
     window.open(`https://github.com/${OWNER}/${REPO}/actions`, '_blank');
   }
 
-  // ── Artikellijst laden ─────────────────────────────────────────
   async function loadArticles() {
     const list = document.getElementById('article-list');
     try {
       const res = await ghFetch(`/repos/${OWNER}/${REPO}/contents/input?ref=${BRANCH}`);
       if (!res.ok) { list.innerHTML = '<li class="empty-state">Kon bestanden niet laden.</li>'; return; }
       const files = await res.json();
-      const txts = files.filter(f => f.name.endsWith('.txt'));
-      if (txts.length === 0) {
+      const txts  = files.filter(f => f.name.endsWith('.txt'));
+      if (!txts.length) {
         list.innerHTML = '<li class="empty-state">Nog geen artikelen. Voeg er een toe!</li>';
         return;
       }
-      list.innerHTML = txts.map(f => {
-        const name = f.name.replace(/\.txt$/, '');
-        return `<li class="article-item">
-          <div>
-            <div class="article-item-title">${name}</div>
-          </div>
+      list.innerHTML = txts.map(f =>
+        `<li class="article-item">
+          <div><div class="article-item-title">${f.name.replace(/\.txt$/, '')}</div></div>
           <span class="badge">txt</span>
-        </li>`;
-      }).join('');
+        </li>`
+      ).join('');
     } catch (e) {
       list.innerHTML = '<li class="empty-state">Fout bij laden.</li>';
     }
   }
 
-  // ── Status tonen ───────────────────────────────────────────────
   function showStatus(msg, type) {
     const el = document.getElementById('status');
     el.textContent = msg;
@@ -474,14 +441,15 @@
     if (type === 'success') setTimeout(() => { el.style.display = 'none'; }, 4000);
   }
 
-  // ── Initialisatie ──────────────────────────────────────────────
   function init() {
     const token = getToken();
     document.getElementById('token-screen').style.display = token ? 'none' : 'block';
-    document.getElementById('app-screen').style.display  = token ? 'block' : 'none';
+    document.getElementById('app-screen').style.display   = token ? 'block' : 'none';
     if (token) {
-      // Standaard datum op vandaag
       document.getElementById('datum').value = new Date().toISOString().slice(0, 10);
+      // Toon token (deels) in shortcut-instructie
+      const display = document.getElementById('token-display');
+      if (display) display.textContent = token.slice(0, 8) + '...';
       loadArticles();
     }
   }

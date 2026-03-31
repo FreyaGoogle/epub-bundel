@@ -1,0 +1,110 @@
+TITEL: Bouw je eigen AI assistent deel 1
+DATUM: 2026-03-31
+CATEGORIE: AI report tutorials
+---
+🔮 Prompt whisperer
+Bouw je eigen onderzoeksassistent met AI (deel 1 van 3)
+Vandaag: een bronnenverwerker die orde schept in de chaos
+Je moet een rapport schrijven, een presentatie onderbouwen of een advies geven. Je hebt twintig artikelen, rapporten en onderzoeken verzameld. En nu? Nu begint het echte werk. Alles doorlezen, aantekeningen maken, verbanden zoeken, conclusies trekken. Dat kost dagen. Soms weken.
+Maar er is goed nieuws. De drie populairste AI-modellen – ChatGPT, Claude en Gemini – hebben nu allemaal een context window van ongeveer een miljoen tokens. Dat klinkt technisch, dus even in gewone taal: het werkgeheugen van AI is nu groot genoeg om tientallen documenten tegelijk te verwerken. Een jaar geleden kon je hooguit een paar pagina's uploaden. Nu kun je een complete literatuurstudie in één keer laten analyseren.
+Dit is deel 1 van een driedelige serie waarin je je eigen onderzoeksassistent bouwt. In deze serie bouwen we één AI-project dat steeds slimmer wordt: elke week voegen we nieuwe vaardigheden toe aan dezelfde assistent. Zo hoef je je bronnen maar één keer te uploaden en bouw je een expert die jouw onderzoek door en door kent.
+Vandaag beginnen we met de bronnenverwerker: vaardigheden om snel overzicht te krijgen in een stapel documenten. In deel 2 voegen we de kritische lezer toe, die zwakke plekken en tegenstrijdigheden opspoort. In deel 3 maken we de assistent af met een synthese-expert, die alles samenvoegt tot heldere conclusies.
+Wat leer je vandaag?
+Hoe je een AI-project opzet als je persoonlijke onderzoeksassistent
+Een kant-en-klare systeemprompt die je direct kunt overnemen
+Hoe je in minuten overzicht krijgt in een stapel bronnen
+Een kenniskaart maken die de kern van je onderzoek blootlegt
+Je kenniskaart visualiseren als interactieve mindmap
+Pro-tips om je bronnenverwerker optimaal te benutten
+Wat is een context window eigenlijk?
+Even een korte uitleg voor wie hier nieuw mee is. Een context window is het werkgeheugen van een AI-model: alles wat de AI tegelijk kan ‘zien’ en verwerken. Hoe groter dat venster, hoe meer informatie je in één gesprek kunt meegeven.
+Een miljoen tokens komt neer op ongeveer 700.000 woorden, oftewel zo'n 1500 pagina's tekst. Dat betekent dat je een flinke stapel rapporten, artikelen of beleidsdocumenten kunt uploaden en de AI vragen om verbanden te leggen, thema's te identificeren en conclusies te trekken. Iets wat voorheen alleen mogelijk was door alles zelf door te spitten.
+Stap 1: maak een nieuw project aan
+Open Claude of ChatGPT en maak een nieuw project aan via 'Projects' in de zijbalk. Je hebt bij beide platforms een betaald abonnement nodig om projecten te gebruiken, maar voor serieus onderzoekswerk is dat de investering waard.
+Geef je project een herkenbare naam, bijvoorbeeld ‘Onderzoeksassistent’. Dit wordt het project dat we de komende weken samen uitbouwen – in deel 2 en 3 voegen we hier nieuwe vaardigheden aan toe.
+Stap 2: voeg de systeemprompt toe
+Kopieer onderstaande instructies naar het veld voor projectinstructies. Dit is de eerste versie van je onderzoeksassistent, gericht op het verwerken van bronnen en het creëren van overzicht.
+Pro-tip: de systeemprompt telt niet mee voor het 'geheugen' van je gesprek. Waar lange chats ervoor kunnen zorgen dat de AI eerder context vergeet, blijven projectinstructies altijd beschikbaar. Maak hier dus optimaal gebruik van door ze extra uitgebreid te maken.
+Je bent mijn persoonlijke onderzoeksassistent, gespecialiseerd in het verwerken en analyseren van grote hoeveelheden bronmateriaal. Je helpt me om snel overzicht te krijgen, verbanden te leggen en de kern van mijn onderzoek bloot te leggen.
+## Jouw expertise
+Je bent gespecialiseerd in:
+- Het systematisch verwerken van meerdere documenten tegelijk
+- Het identificeren van kernboodschappen en hoofdargumenten per bron
+- Het groeperen van bronnen op basis van gedeelde thema's of invalshoeken
+- Het bouwen van kenniskaarten die de structuur van een onderzoeksveld blootleggen
+- Het visualiseren van complexe verbanden in interactieve diagrammen
+- Het signaleren van hiaten: welke vragen worden niet beantwoord?
+## Hoe je werkt
+1. Je begint altijd met een intake: je inventariseert eerst wat je hebt ontvangen voordat je analyseert
+2. Je vat bronnen niet individueel samen, maar zoekt naar patronen en verbanden
+3. Je groepeert bronnen op inhoudelijke overlap, niet op oppervlakkige kenmerken
+4. Je bent expliciet over wat de bronnen NIET behandelen
+5. Je biedt aan om analyses te visualiseren wanneer dat het begrip vergroot
+6. Je eindigt altijd met concrete vervolgstappen of vragen
+## VAARDIGHEID 1: Het Intake Protocol
+Wanneer ik documenten upload en om een eerste verwerking vraag:
+1. Maak een overzichtstabel met kolommen: Bron | Auteur/Organisatie | Datum | Kernboodschap (één zin)
+2. Groepeer de bronnen in 2-5 clusters op basis van gedeelde aannames, methodes of perspectieven. Geef elk cluster een naam en leg in 1-2 zinnen uit wat de bronnen bindt.
+3. Signaleer waar bronnen elkaar tegenspreken of fundamenteel anders naar het onderwerp kijken.
+4. Benoem wat er NIET in de bronnen staat: welke vragen blijven onbeantwoord?
+## VAARDIGHEID 2: De Kenniskaart
+Wanneer ik om een kenniskaart vraag, bouw je een gestructureerd overzicht:
+1. De centrale these: de belangrijkste stelling die de meeste bronnen proberen te onderbouwen, nuanceren of weerleggen. Als er geen gedeelde these is, benoem dan de 2 concurrerende perspectieven.
+2. Dragende pijlers (3-5): goed onderbouwde deelconclusies die door meerdere bronnen worden ondersteund. Per pijler: [Conclusie] – ondersteund door: [Bron 1], [Bron 2]
+3. Betwiste gebieden (2-3): onderwerpen waarover de bronnen het oneens zijn. Per gebied: [Onderwerp] – [Standpunt A] vs. [Standpunt B]
+4. Open vragen (1-2): vragen die de bronnen oproepen maar niet beantwoorden.
+5. Startpunten voor een nieuwkomer: de 3 bronnen die iemand als eerste zou moeten lezen om het onderwerp te begrijpen, met uitleg waarom.
+## VAARDIGHEID 3: Visuele Kenniskaart
+Wanneer ik vraag om een visualisatie of interactieve kaart, maak je een klikbaar diagram met:
+- In het centrum: de centrale these of het kernvraagstuk
+- Als vertakkingen: de dragende pijlers met de bronnen die ze ondersteunen
+- Gemarkeerd in een andere kleur: de betwiste gebieden
+- Aan de randen: de open vragen
+- Interactief: zodat ik kan klikken voor meer detail per onderdeel
+## Mijn context
+[Vul hier in: waar je onderzoek over gaat, wat je ermee wilt bereiken, en wat voor soort bronnen je verzamelt – rapporten, nieuwsartikelen, wetenschappelijke papers, beleidsdocumenten, etc.]
+## Belangrijke richtlijnen
+- Wees specifiek: "de meeste bronnen" is vaag, noem welke bronnen
+- Zoek naar wat bronnen verbindt, niet alleen naar wat ze individueel zeggen
+- Wees eerlijk over de grenzen van het materiaal
+- Als ik zeg "verwerk deze bronnen" of "geef me overzicht", gebruik dan het Intake Protocol
+- Als ik zeg "maak een kenniskaart" of "breng de structuur in kaart", gebruik dan de Kenniskaart-aanpak
+- Als ik zeg "visualiseer dit" of "maak er een diagram van", gebruik dan de Visuele Kenniskaart
+Belangrijk: vul het deel ‘Mijn context’ aan met informatie over jouw specifieke onderzoek. Hoe specifieker je bent over wat je zoekt, hoe relevanter de analyse.
+Stap 3: upload je bronnen en stel je eerste vraag
+Upload je documenten naar het project en gebruik een van deze prompts:
+Voor een eerste verwerking (Het Intake Protocol):
+Ik heb zojuist [aantal] documenten geüpload over [onderwerp]. 
+Verwerk ze volgens het Intake Protocol:
+1. Geef me een overzichtstabel met bron, auteur, datum en kernboodschap
+2. Groepeer ze in thematische clusters
+3. Signaleer waar ze elkaar tegenspreken
+4. Benoem wat er NIET in staat
+Mijn doel met dit onderzoek: [omschrijf wat je ermee wilt – een rapport, presentatie, advies, etc.]
+Voor een kenniskaart:
+Maak een kenniskaart van alle geüploade bronnen over [onderwerp].
+Breng in kaart:
+- Wat is de centrale these of het centrale debat?
+- Welke conclusies worden breed ondersteund?
+- Waar zijn de bronnen het oneens?
+- Welke vragen blijven open?
+- Welke 3 bronnen zou een nieuwkomer als eerste moeten lezen?
+Wees specifiek: noem welke bronnen wat ondersteunen.
+Voor een visuele kenniskaart:
+Zoals je dinsdag las in onze AI Toolkit kan Claude nu interactieve visualisaties bouwen, rechtstreeks in het gesprek. Hiervoor heb je geen aparte software of designkennis nodig. Je beschrijft wat je wilt zien en Claude bouwt het ter plekke. Voor je bronnenonderzoek betekent dit dat je je kenniskaart kunt omzetten in een klikbaar diagram dat je kunt verkennen, aanpassen en downloaden als HTML-bestand voor in je presentatie.
+Visualiseer mijn bronnenonderzoek als een interactieve kenniskaart.
+Bouw een klikbaar diagram met:
+- In het midden: de kernvraag of centrale these
+- Als takken: de belangrijkste deelconclusies (met de bronnen die ze ondersteunen)
+- Gemarkeerd in een andere kleur: waar bronnen elkaar tegenspreken
+- Aan de randen: de vragen die nog open staan
+Maak het interactief zodat ik kan doorklikken voor details. Voeg een legenda toe die uitlegt wat de kleuren betekenen.
+Pro-tip: tevreden met het resultaat? Vraag Claude om er een artifact van te maken. Je krijgt een downloadbaar HTML-bestand dat je kunt openen in elke browser, delen met collega's of inbedden in een presentatie.
+Pro-tips voor nog betere resultaten
+Geef je bronnen duidelijke namen. Hernoem bestanden naar iets herkenbaars voordat je ze uploadt: "McKinsey_2024_Duurzaamheidsrapport.pdf" werkt beter dan "document_final_v3.pdf".
+Begin breed, zoom dan in. Start met het Intake Protocol om overzicht te krijgen. Vraag daarna om een kenniskaart, en laat die vervolgens visualiseren om het echt te laten landen.
+Vraag om de ‘blinde vlekken’. Vraag expliciet: "Welke belangrijke vragen worden door geen van deze bronnen beantwoord?" Dit helpt je te zien waar je onderzoek nog gaten heeft.
+Gebruik de visualisatie in je presentatie. De interactieve kenniskaart die Claude maakt kun je gebruiken als basis voor een slide of als denkraamwerk voor je rapport.
+Waarom werkt dit?
+Het probleem bij het verwerken van veel bronnen is niet dat het intellectueel moeilijk is, maar dat het vooral tijdrovend is. Je moet alles lezen, onthouden wat waar stond, en zelf verbanden leggen. Dat is nu precies waar AI in uitblinkt: grote hoeveelheden tekst tegelijk overzien en patronen herkennen.
+De systeemprompt dwingt een systematische aanpak af. Door te vragen om clusters, tegenstrijdigheden en blinde vlekken krijg je niet gewoon samenvattingen, je krijgt een analyse die je helpt om te begrijpen hoe je bronnen zich tot elkaar verhouden. En door het te visualiseren, zie je letterlijk hoe alles samenhangt.
